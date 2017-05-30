@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/muestraDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/hacerOtraReservacion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:onClick="hacerOtraReserva"
+        android:text="Hacer Otra Reservacion" />
+
+    <Button
+        android:text="Llamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/llamada"
+
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/mapa"
+        android:layout_centerHorizontal="true"
+        android:onClick="llamadaTelefono" />
+
+    <TextView
+        android:text="Contacto"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:id="@+id/textView"
+        android:layout_above="@+id/llamada"
+        android:layout_alignLeft="@+id/llamada" />
+
+    <Button
+        android:text="Correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correo"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/llamada"
+        android:layout_alignRight="@+id/llamada"
+        android:onClick="mandarCorreo" />
+
+    <Button
+        android:text="Ubicación"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:id="@+id/mapa"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="googleMaps" />
+
+</RelativeLayout>
